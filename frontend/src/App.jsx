@@ -11,7 +11,7 @@ function App() {
     setLoading(true);
     setOutput('');
     try {
-      const res = await fetch('VITE_BACKEND_URL', {
+      const res = await fetch('https://code-studio-e523.onrender.com/execute', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
