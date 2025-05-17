@@ -15,7 +15,7 @@ app.add_middleware(
 )
 
 # Mount the built React frontend
-app.mount("/", StaticFiles(directory="../frontend/dist", html=True), name="static")
+#app.mount("/", StaticFiles(directory="../frontend/dist", html=True), name="static")
 
 @app.post("/execute")
 async def execute_code(request: Request):

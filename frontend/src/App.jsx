@@ -11,7 +11,7 @@ function App() {
     setLoading(true);
     setOutput('');
     try {
-      const res = await fetch('http://localhost:8000/execute', {
+      const res = await fetch('VITE_BACKEND_URL', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
