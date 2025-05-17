@@ -14,6 +14,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+def read_root():
+    return {"message": "API is running!"}
+
 # Mount the built React frontend
 #app.mount("/", StaticFiles(directory="../frontend/dist", html=True), name="static")
 
